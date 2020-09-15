@@ -1,6 +1,5 @@
 # Can Wastewater Nutrient Discharge be optimized using machine learning?
-# Perform a feasibility study that relies on a classification tree to predict whether an industrial wastewater plant would be able to meet new total nitrogen limits of 10 mg/L.
- DATA USED IS A 535 X 35 MATRIX
+1. Perform a feasibility study that relies on a classification tree to predict whether an industrial wastewater plant would be able to meet new total nitrogen limits of 10 mg/L.
 - TN_PASS -> A CATEGORICAL DEPENDENT VARIABLE INDICATING WHETHER DAILY TN
 CONCENTRATIONS MET THE NEW DISCHARGE LIMITS (10 MG/L).
 - X -> VARIABLE FOR 34 CONTINUOUS PREDICTORS OF TN_PASS (SELECTED FROM
@@ -11,3 +10,9 @@ POINTS AND TESTED ON THE FIVE (5) REMAINING OBSERVATIONS.
 WITH THE SMALLEST XERROR.
 
 2. Leveraging on constrained ordination methods, identify "constraining variables" that may be prominent drivers for effluent ammonia and nitrate concentration behaviors.
+- 535 OBSERVATIONS BY 34 POSSIBLE DRIVERS.
+- 535 OBSERVATIONS BY 2 VARIABLES TO BE PREDICTED.
+- DATA STANDARDIZATION WAS PERFORMED ON BOTH DATASETS.
+- DIMENSIONALITY REDUCTION USING VIF.
+- MLR FITTING
+- PERFORM PCA ON PREDICTING MATRIX
